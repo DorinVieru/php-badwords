@@ -5,7 +5,7 @@ $paragrafo = $_GET["paragrafo"];
 $bad_word = $_GET["bad-word"];
 
 // VARIABILI PER SOSTITUIRE LE PAROLE CATTIVE CON NUOVE PAROLE E SCRIVERE UN NUOVO PARAGRAFO
-$new_word = '<span class="text-danger"> *** </span>';
+$new_word = '***';
 $new_paragrafo = str_replace($bad_word, $new_word, $paragrafo)
 
 ?>
@@ -29,12 +29,12 @@ $new_paragrafo = str_replace($bad_word, $new_word, $paragrafo)
             <div class="col-12">
                 <h1>Ecco il tuo paragrafo <span class="text-danger">malizioso</span></h1>
                 <p> <?php echo $paragrafo ?> </p>
-                <p>La lunghezza del tuo paragrafo <span class="text-danger">malizioso</span> è pari a <strong><?php echo strlen($paragrafo) ?> parole</strong>, complimenti! </p>
+                <p>La lunghezza del tuo paragrafo <span class="text-danger">malizioso</span> è pari a <strong><?php echo strlen($paragrafo) ?> caratteri</strong>, complimenti! </p>
             </div>
             <div class="col-12">
                 <h1>Ecco il tuo paragrafo <span class="text-success">senza impurità</span> mondane </h1>
                 <p> <?php echo $new_paragrafo ?> </p>
-                <p>La lunghezza del tuo paragrafo <span class="text-success">senza impurità</span> mondane è pari a <strong><?php echo strlen($new_paragrafo) ?> parole</strong>, complimenti! </p>
+                <p>La lunghezza del tuo paragrafo <span class="text-success">senza impurità</span> mondane è pari a <strong><?php echo strlen($new_paragrafo) ?> caratteri</strong>, complimenti! </p>
             </div>
         </div>
     </div>
