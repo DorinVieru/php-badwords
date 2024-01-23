@@ -13,16 +13,19 @@
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-5">
+                <!-- TITOLO FORM -->
                 <h1 class="text-danger mb-5 text-center">Form for Bad Words</h1>
+
+                <!-- FORM -->
                 <form action="dashboard.php" method="GET">
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Scrivi un bel paragrafo</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="paragrafo" rows="3"></textarea>
                         <div id="emailHelp" class="form-text">Tranquillo, non lo diremo a nessuno cosa scrivi (forse)</div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Scrivi una parola da censusare (non fare il furbo)</label>
-                        <input class="form-control" type="text" aria-label="default input example">
+                        <input class="form-control" type="text" name="bad-word" aria-label="default input example">
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
